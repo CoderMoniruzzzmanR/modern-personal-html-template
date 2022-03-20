@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="33" viewBox="0 0 180 33">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 72px;
+        fill: #6138bd;
+        font-family: Broadway;
+      }
+
+      .cls-2 {
+        fill: #161c2d;
+      }
+    </style>
+  </defs>
+  <text id="Zenith" class="cls-1" transform="matrix(0.645, 0, 0, 0.645, -0.948, 32.224)">Z<tspan class="cls-2">enith</tspan></text>
+</svg>
