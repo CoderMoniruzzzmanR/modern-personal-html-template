@@ -13,3 +13,17 @@
    font-weight: 400 !important;
    line-height: 1.5 !important;
 }
+.btn-base{
+   border : 1px solid #6138bd;
+   color : #6138bd;
+   &:hover{
+      border : 1px solid #6138bd;
+      color : #fff;
+      background-color: #6138bd;
+   }
+   &:focus{
+      border : 1px solid #6138bd;
+      color : #fff;
+      background-color: #6138bd;
+   }
+}

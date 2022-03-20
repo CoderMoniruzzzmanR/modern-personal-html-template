@@ -12,6 +12,25 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Rubik', sans-serif;
+  color: #6f6b80;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #161c2d;
+  margin: 0px;
+  padding: 0px;
+}
+
+p {
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  color: #161c2d;
+}
+
+span {
   color: #161c2d;
 }
 
@@ -36,6 +55,23 @@ img {
   font-size: 14px !important;
   font-weight: 400 !important;
   line-height: 1.5 !important;
+}
+
+.btn-base {
+  border: 1px solid #6138bd;
+  color: #6138bd;
+}
+
+.btn-base:hover {
+  border: 1px solid #6138bd;
+  color: #fff;
+  background-color: #6138bd;
+}
+
+.btn-base:focus {
+  border: 1px solid #6138bd;
+  color: #fff;
+  background-color: #6138bd;
 }
 
 /*==================
@@ -214,6 +250,89 @@ img {
   overflow: hidden;
 }
 
+.banner-full .banner-left .details {
+  padding-right: 120px;
+}
+
+.banner-full .banner-left .details h3 {
+  font-size: 24px;
+  color: #6f6b80;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.banner-full .banner-left .details h1 {
+  font-size: 60px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.banner-full .banner-left .details .type p {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.banner-full .banner-left .details .type p span {
+  color: #6138bd;
+}
+
+.banner-full .banner-left .details .text {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.banner-full .banner-left .details .cv-btn {
+  position: relative;
+}
+
+.banner-full .banner-left .details .cv-btn a {
+  text-decoration: none;
+  border: 2px solid #6138bd;
+  border-radius: 50px;
+  padding: 10px 30px;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  color: #6138bd;
+  z-index: 9;
+  font-size: 16px;
+  font-weight: 500;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.banner-full .banner-left .details .cv-btn a:before {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  background-color: #6138bd;
+  border: 2px solid #6138bd;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  height: 0;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.banner-full .banner-left .details .cv-btn a span {
+  color: #6138bd;
+}
+
+.banner-full .banner-left .details .cv-btn a:hover {
+  color: #fff;
+}
+
+.banner-full .banner-left .details .cv-btn a:hover:before {
+  height: 115%;
+  border: 2px solid #6138bd;
+}
+
+.banner-full .banner-left .details .cv-btn a:hover span {
+  color: #fff;
+}
+
 .banner-full .banner-right {
   position: relative;
 }
@@ -244,7 +363,7 @@ img {
 .banner-full .banner-right .image-box .image-card {
   position: absolute;
   top: calc(50% - 90px);
-  left: -160px;
+  left: -140px;
   text-align: left;
   padding-left: 25px;
   padding-right: 25px;
@@ -288,4 +407,239 @@ img {
   padding: 0px;
   padding-left: 15px;
   color: #161c2d;
+}
+
+@media only screen and (max-width: 1199px) {
+  .banner-full .banner-left .details {
+    padding-right: 80px;
+  }
+  .banner-full .banner-left .details h3 {
+    font-size: 20px;
+    color: #6f6b80;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+  .banner-full .banner-left .details h1 {
+    font-size: 52px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  .banner-full .banner-left .details .type p {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  .banner-full .banner-left .details .text {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .banner-full .banner-left .details .cv-btn a {
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .banner-full .banner-left .details .cv-btn a:before {
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+  .banner-full .banner-right::before {
+    bottom: -380px;
+    left: -80px;
+  }
+  .banner-full .banner-right .image-box {
+    max-width: 400px;
+    padding-top: 120px;
+  }
+  .banner-full .banner-right .image-box .image-card {
+    top: calc(50% + 30px);
+    left: -80px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 180px;
+    background-color: #ffffff;
+    border-radius: 5px;
+  }
+  .banner-full .banner-right .image-box .image-card .image-icon {
+    position: relative;
+    top: 4px;
+    left: -35px;
+  }
+  .banner-full .banner-right .image-box .image-card .image-icon span {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+  }
+  .banner-full .banner-right .image-box .image-card .star i, .banner-full .banner-right .image-box .image-card .star svg {
+    font-size: 14px;
+  }
+  .banner-full .banner-right .image-box .image-card .btn-trans {
+    color: #161c2d;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .banner-full {
+    height: 100%;
+  }
+  .banner-full .banner-left {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    padding-top: 60px;
+    padding-bottom: 100px;
+  }
+  .banner-full .banner-left .details {
+    padding-right: 0px;
+    text-align: center;
+  }
+  .banner-full .banner-left .details h3 {
+    font-size: 20px;
+    color: #6f6b80;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+  .banner-full .banner-left .details h1 {
+    font-size: 52px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  .banner-full .banner-left .details .type p {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  .banner-full .banner-left .details .text {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .banner-full .banner-left .details .cv-btn a {
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .banner-full .banner-left .details .cv-btn a:before {
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+  .banner-full .banner-right {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .banner-full .banner-right::before {
+    bottom: -380px;
+    left: -80px;
+    display: none;
+  }
+  .banner-full .banner-right .image-box {
+    max-width: 400px;
+    max-height: 550px;
+    padding-top: 60px;
+  }
+  .banner-full .banner-right .image-box .image-card {
+    top: calc(50% + 30px);
+    left: -80px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 180px;
+    background-color: #ffffff;
+    border-radius: 5px;
+  }
+  .banner-full .banner-right .image-box .image-card .image-icon {
+    position: relative;
+    top: 4px;
+    left: -35px;
+  }
+  .banner-full .banner-right .image-box .image-card .image-icon span {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+  }
+  .banner-full .banner-right .image-box .image-card .star i, .banner-full .banner-right .image-box .image-card .star svg {
+    font-size: 14px;
+  }
+  .banner-full .banner-right .image-box .image-card .btn-trans {
+    color: #161c2d;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .banner-full {
+    height: 100%;
+  }
+  .banner-full .banner-left {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    padding-top: 60px;
+    padding-bottom: 100px;
+  }
+  .banner-full .banner-left .details {
+    padding-right: 0px;
+    text-align: center;
+  }
+  .banner-full .banner-left .details h3 {
+    font-size: 20px;
+    color: #6f6b80;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+  .banner-full .banner-left .details h1 {
+    font-size: 52px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  .banner-full .banner-left .details .type p {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  .banner-full .banner-left .details .text {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .banner-full .banner-left .details .cv-btn a {
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .banner-full .banner-left .details .cv-btn a:before {
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+  .banner-full .banner-right {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .banner-full .banner-right::before {
+    bottom: -380px;
+    left: -80px;
+    display: none;
+  }
+  .banner-full .banner-right .image-box {
+    max-width: 400px;
+    max-height: 550px;
+    padding-top: 60px;
+  }
+  .banner-full .banner-right .image-box .image-card {
+    display: none;
+  }
 }
