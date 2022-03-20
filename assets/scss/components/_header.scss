@@ -2,6 +2,7 @@
      padding: 15px 0px;
      position: fixed;
      width: 100%;
+     z-index: 999;
      .navbar{
         padding: 0px;
         .nav-item{
@@ -57,6 +58,7 @@
    .header-full{
       height: 60px;
       padding: 0px 0px;
+      background-color: #fff;
       .container{
          max-width: 991px;
       }
@@ -68,7 +70,7 @@
          .navbar-collapse{
             position: absolute;
             left: 0;
-            top: 61px;
+            top: 60px;
             background-color: #fff;
             width: 100%;
          }

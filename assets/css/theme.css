@@ -11,6 +11,8 @@
 body {
   padding: 0;
   margin: 0;
+  font-family: 'Rubik', sans-serif;
+  color: #161c2d;
 }
 
 img {
@@ -20,6 +22,7 @@ img {
 
 .btn {
   border: 0px;
+  text-transform: capitalize;
 }
 
 .btn:focus {
@@ -42,6 +45,7 @@ img {
   padding: 15px 0px;
   position: fixed;
   width: 100%;
+  z-index: 999;
 }
 
 .header-full .navbar {
@@ -105,6 +109,7 @@ img {
   .header-full {
     height: 60px;
     padding: 0px 0px;
+    background-color: #fff;
   }
   .header-full .container {
     max-width: 991px;
@@ -120,7 +125,7 @@ img {
   .header-full .navbar .navbar-collapse {
     position: absolute;
     left: 0;
-    top: 61px;
+    top: 60px;
     background-color: #fff;
     width: 100%;
   }
@@ -206,4 +211,81 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  overflow: hidden;
+}
+
+.banner-full .banner-right {
+  position: relative;
+}
+
+.banner-full .banner-right::before {
+  position: absolute;
+  content: ' ';
+  bottom: -350px;
+  left: -140px;
+  background-image: url("../img/banner-arrow.png");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.banner-full .banner-right .image-box {
+  max-width: 500px;
+  max-height: 650px;
+  text-align: center;
+  margin: auto;
+  position: relative;
+}
+
+.banner-full .banner-right .image-box img {
+  max-width: 100%;
+}
+
+.banner-full .banner-right .image-box .image-card {
+  position: absolute;
+  top: calc(50% - 90px);
+  left: -160px;
+  text-align: left;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  width: 200px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.banner-full .banner-right .image-box .image-card .image-icon {
+  position: relative;
+  top: -4px;
+  left: -55px;
+}
+
+.banner-full .banner-right .image-box .image-card .image-icon span {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #6138bd;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  display: block;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.banner-full .banner-right .image-box .image-card .star {
+  padding-left: 15px;
+}
+
+.banner-full .banner-right .image-box .image-card .star i, .banner-full .banner-right .image-box .image-card .star svg {
+  color: #fda000;
+}
+
+.banner-full .banner-right .image-box .image-card .btn-trans {
+  font-weight: 500;
+  padding: 0px;
+  padding-left: 15px;
+  color: #161c2d;
 }
