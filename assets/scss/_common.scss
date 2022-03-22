@@ -1,0 +1,174 @@
+/*==========
+-- root css --
+==========*/
+:root{
+   --base-color: #fff;
+}
+
+/*==================
+-- common css --
+===================*/
+
+body{
+   padding: 0;
+   margin: 0;
+   font-family: 'Rubik', sans-serif;
+   color: #6f6b80;
+   box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+   color: #161c2d;
+   margin: 0px;
+   padding: 0px;
+}
+p{
+   padding: 0px;
+   margin: 0px;
+   line-height: 1.7;
+   font-size: 16px;
+}
+a{
+   color: #161c2d;
+}
+span{
+   color: #161c2d;
+}
+img{
+     max-width: 100%;
+     height: auto;
+}
+/*-------------------------------
+  Common Color Class CSS
+-------------------------------*/
+.progress-bar{
+   &.progress-primary{
+      background-color: #53c1de;
+   }
+   &.progress-color-one{
+      background-color: #f35045;
+   }
+   &.progress-color-two{
+      background-color: #5bab53;
+   }
+   &.progress-color-three{
+      background-color: #a6120d;
+   }
+   &.progress-color-four{
+      background-color: #6138bd;
+   }
+   &.progress-color-five{
+      background-color: #a4c639;
+   }
+   &.progress-color-six{
+      background-color: #9ace60;
+   }
+   &.progress-color-seven{
+      background-color: #41b883;
+   }
+   &.progress-color-base{
+      background-color: #6138bd;
+   }
+   &.progress-color-eight{
+      background-color: #061e26;
+   }
+   &.progress-color-nine{
+      background-color: #330000;
+   }
+}
+
+.colorbg-one{
+   color: #f78c4b;
+   background-color: rgba(247,140,75,0.2);
+   svg, i{
+      color: #f78c4b;
+      background-color: rgba(247,140,75,0.2);
+   }
+}
+
+.colorbg-two{
+   color: #1be483;
+   background-color: #dcfcef;
+   svg, i{
+      color: #1be483;
+      background-color: #dcfcef;
+   }
+}
+
+.colorbg-three{
+   color: #f8d04d;
+   background-color: #faf8e1;
+   svg, i{
+      color: #f8d04d;
+      background-color: #faf8e1;
+   }
+}
+
+.colorbg-four{
+   color: #377dff;
+   background-color: rgba(55,125,255,0.1);
+   svg, i{
+      color: #377dff;
+      background-color: rgba(55,125,255,0.1);
+   }
+}
+
+.colorbg-five{
+   color: #f05492;
+   background-color: rgba(240,84,146,0.1);
+   svg, i{
+      color: #f05492;
+      background-color: rgba(240,84,146,0.1);
+      fill: rgba(240,84,146,0.1);
+   }
+}
+
+.colorbg-six{
+   color: #6138bd;
+   background-color: #f5ecfd;
+   svg, i{
+      color: #6138bd;
+      background-color: #f5ecfd;
+   }
+}
+
+/*-------------------------------
+   Common Class  CSS
+-------------------------------*/
+.title{
+   text-transform: capitalize;
+   padding: 0px 320px;
+   span{
+      display: inline-block;
+      margin: 0 0 8px;
+      position: relative;
+      z-index: 1;
+      line-height: 1;
+      letter-spacing: .5px;
+      font-weight: 600;
+      padding-bottom: 15px;
+      text-transform: capitalize;
+      &:before {
+         position: absolute;
+         bottom: 0;
+         left: 55px;
+         content: "";
+         width: 4px;
+         height: 3px;
+         background-color: #6138bd;
+     }
+     &::after{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      content: "";
+      width: 50px;
+      height: 3px;
+      background-color: #6138bd;
+     }
+   }
+   h2{
+      font-size: 44px;
+      font-weight: 700;
+      line-height: 1.5;
+   }
+}

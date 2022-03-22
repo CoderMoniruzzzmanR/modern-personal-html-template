@@ -13,6 +13,8 @@ body {
   margin: 0;
   font-family: 'Rubik', sans-serif;
   color: #6f6b80;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -39,6 +41,122 @@ span {
 img {
   max-width: 100%;
   height: auto;
+}
+
+/*-------------------------------
+  Common Color Class CSS
+-------------------------------*/
+.progress-bar.progress-primary {
+  background-color: #53c1de;
+}
+
+.progress-bar.progress-color-one {
+  background-color: #f35045;
+}
+
+.progress-bar.progress-color-two {
+  background-color: #5bab53;
+}
+
+.progress-bar.progress-color-three {
+  background-color: #a6120d;
+}
+
+.progress-bar.progress-color-four {
+  background-color: #6138bd;
+}
+
+.progress-bar.progress-color-five {
+  background-color: #a4c639;
+}
+
+.progress-bar.progress-color-six {
+  background-color: #9ace60;
+}
+
+.progress-bar.progress-color-seven {
+  background-color: #41b883;
+}
+
+.progress-bar.progress-color-base {
+  background-color: #6138bd;
+}
+
+.progress-bar.progress-color-eight {
+  background-color: #061e26;
+}
+
+.progress-bar.progress-color-nine {
+  background-color: #330000;
+}
+
+.colorbg-one {
+  color: #f78c4b;
+  background-color: rgba(247, 140, 75, 0.2);
+}
+
+.colorbg-one svg, .colorbg-one i {
+  color: #f78c4b;
+  background-color: rgba(247, 140, 75, 0.2);
+}
+
+.colorbg-two {
+  color: #1be483;
+  background-color: #dcfcef;
+}
+
+.colorbg-two svg, .colorbg-two i {
+  color: #1be483;
+  background-color: #dcfcef;
+}
+
+.colorbg-three {
+  color: #f8d04d;
+  background-color: #faf8e1;
+}
+
+.colorbg-three svg, .colorbg-three i {
+  color: #f8d04d;
+  background-color: #faf8e1;
+}
+
+.colorbg-four {
+  color: #377dff;
+  background-color: rgba(55, 125, 255, 0.1);
+}
+
+.colorbg-four svg, .colorbg-four i {
+  color: #377dff;
+  background-color: rgba(55, 125, 255, 0.1);
+}
+
+.colorbg-five {
+  color: #f05492;
+  background-color: rgba(240, 84, 146, 0.1);
+}
+
+.colorbg-five svg, .colorbg-five i {
+  color: #f05492;
+  background-color: rgba(240, 84, 146, 0.1);
+  fill: rgba(240, 84, 146, 0.1);
+}
+
+.colorbg-six {
+  color: #6138bd;
+  background-color: #f5ecfd;
+}
+
+.colorbg-six svg, .colorbg-six i {
+  color: #6138bd;
+  background-color: #f5ecfd;
+}
+
+/*-------------------------------
+   Common Class  CSS
+-------------------------------*/
+.title {
+  text-transform: capitalize;
+  padding: 0px 320px;
 }
 
 .title span {
@@ -79,6 +197,248 @@ img {
   line-height: 1.5;
 }
 
+/*==========play Animation CSS Start==========*/
+.play-now {
+  background: #6138bd;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  position: relative;
+  text-align: center;
+  border: 3px solid #6138bd;
+  z-index: 1;
+  font-size: 28px;
+  padding-left: 5px;
+  display: block;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.play-now i, .play-now svg {
+  color: #fff;
+}
+
+.play-now .ripple {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 60px;
+  width: 60px;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 0 rgba(96, 56, 189, 0.712);
+          box-shadow: 0 0 0 0 rgba(96, 56, 189, 0.712);
+  -webkit-animation: ripple 3s infinite;
+          animation: ripple 3s infinite;
+  background-color: transparent;
+}
+
+.play-now .ripple:before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  height: 60px;
+  width: 60px;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 0 #fff;
+          box-shadow: 0 0 0 0 #fff;
+  -webkit-animation: ripple 3s infinite;
+          animation: ripple 3s infinite;
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
+.play-now .ripple:after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  height: 60px;
+  width: 60px;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 0 rgba(96, 56, 189, 0.712);
+          box-shadow: 0 0 0 0 rgba(96, 56, 189, 0.712);
+  -webkit-animation: ripple 3s infinite;
+          animation: ripple 3s infinite;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+@-webkit-keyframes ripple {
+  70% {
+    -webkit-box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+            box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+            box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes ripple {
+  70% {
+    -webkit-box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+            box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+            box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+
+/*==========play Animation CSS End==========*/
+/*==========Bubbles Animation CSS Start==========*/
+.bubbles_wrap {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 990;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+@-webkit-keyframes animateBubble {
+  0% {
+    margin-top: 20%;
+  }
+  to {
+    margin-top: -30%;
+  }
+}
+
+@keyframes animateBubble {
+  0% {
+    margin-top: 20%;
+  }
+  to {
+    margin-top: -30%;
+  }
+}
+
+@-webkit-keyframes sideWays {
+  0% {
+    margin-left: 0;
+  }
+  to {
+    margin-left: 25px;
+  }
+}
+
+@keyframes sideWays {
+  0% {
+    margin-left: 0;
+  }
+  to {
+    margin-left: 25px;
+  }
+}
+
+.x1 {
+  -webkit-animation: animateBubble 15s linear infinite, sideWays 2s ease-in-out infinite alternate;
+  animation: animateBubble 15s linear infinite, sideWays 2s ease-in-out infinite alternate;
+  left: 6%;
+  top: 45%;
+  background: #6138bd;
+}
+
+.x2 {
+  -webkit-animation: animateBubble 10s linear infinite, sideWays 4s ease-in-out infinite alternate;
+  animation: animateBubble 10s linear infinite, sideWays 4s ease-in-out infinite alternate;
+  left: 5%;
+  top: 80%;
+  background: #a756f9;
+}
+
+.x3 {
+  -webkit-animation: animateBubble 18s linear infinite, sideWays 2s ease-in-out infinite alternate;
+  animation: animateBubble 18s linear infinite, sideWays 2s ease-in-out infinite alternate;
+  left: 10%;
+  top: 40%;
+  background: #6138bd;
+}
+
+.x4 {
+  -webkit-animation: animateBubble 12s linear infinite, sideWays 3s ease-in-out infinite alternate;
+  animation: animateBubble 12s linear infinite, sideWays 3s ease-in-out infinite alternate;
+  left: 20%;
+  top: 0;
+  background: #a756f9;
+}
+
+.x5 {
+  -webkit-animation: animateBubble 19s linear infinite, sideWays 4s ease-in-out infinite alternate;
+  animation: animateBubble 19s linear infinite, sideWays 4s ease-in-out infinite alternate;
+  left: 30%;
+  top: 50%;
+  background: #6138bd;
+}
+
+.x6 {
+  -webkit-animation: animateBubble 11s linear infinite, sideWays 2s ease-in-out infinite alternate;
+  animation: animateBubble 11s linear infinite, sideWays 2s ease-in-out infinite alternate;
+  left: 50%;
+  top: 0;
+  background: #a756f9;
+}
+
+.x7 {
+  -webkit-animation: animateBubble 10s linear infinite, sideWays 2s ease-in-out infinite alternate;
+  animation: animateBubble 10s linear infinite, sideWays 2s ease-in-out infinite alternate;
+  left: 65%;
+  top: 70%;
+  background: #6138bd;
+}
+
+.x8 {
+  -webkit-animation: animateBubble 12s linear infinite, sideWays 3s ease-in-out infinite alternate;
+  animation: animateBubble 12s linear infinite, sideWays 3s ease-in-out infinite alternate;
+  left: 80%;
+  top: 10%;
+  background: #a756f9;
+}
+
+.x9 {
+  -webkit-animation: animateBubble 19s linear infinite, sideWays 4s ease-in-out infinite alternate;
+  animation: animateBubble 19s linear infinite, sideWays 4s ease-in-out infinite alternate;
+  left: 90%;
+  top: 50%;
+  background: #7859fc;
+}
+
+.x10 {
+  -webkit-animation: animateBubble 16s linear infinite, sideWays 2s ease-in-out infinite alternate;
+  animation: animateBubble 16s linear infinite, sideWays 2s ease-in-out infinite alternate;
+  left: 80%;
+  top: 80%;
+  background: #a756f9;
+}
+
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  width: 5px;
+  height: 5px;
+}
+
+/*==========Bubbles Animation CSS End==========*/
 .btn {
   border: 0px;
   text-transform: capitalize;
@@ -114,9 +474,9 @@ img {
   background-color: #6138bd;
 }
 
-/*==================
--- header css --
-===================*/
+/*-------------------------------
+   Header  Section  CSS
+-------------------------------*/
 .header-full {
   padding: 25px 0px;
   position: fixed;
@@ -187,104 +547,6 @@ img {
   height: 100%;
   max-width: 150px;
   max-height: 80px;
-}
-
-@media only screen and (max-width: 991px) {
-  .header-full {
-    height: 60px;
-    padding: 0px 0px;
-    background-color: #fff;
-  }
-  .header-full .container {
-    max-width: 991px;
-  }
-  .header-full .navbar {
-    padding: 0px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 60px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
-  .header-full .navbar .navbar-collapse {
-    position: absolute;
-    left: 0;
-    top: 60px;
-    background-color: #fff;
-    width: 100%;
-  }
-  .header-full .navbar .nav-item {
-    position: relative;
-    z-index: 9;
-    margin: 0 0px 0 0;
-    text-align: left;
-    margin-right: 25px;
-    margin-left: 25px;
-    margin-bottom: 8px;
-  }
-  .header-full .navbar .nav-item:first-child {
-    margin-right: 25px;
-    margin-left: 25px;
-    margin-top: 25px;
-  }
-  .header-full .navbar .nav-item:last-child {
-    margin-right: 25px;
-    margin-left: 25px;
-    margin-bottom: 25px;
-  }
-  .header-full .navbar .nav-item .nav-link {
-    padding: 0px 0px;
-    font-family: 'Rubik', sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 30px;
-    color: #161c2d;
-  }
-  .header-full .navbar .nav-item .active {
-    color: #6138bd;
-  }
-  .header-full .navbar .nav-item .active::after {
-    position: absolute;
-    content: '';
-    width: 28px;
-    left: -10px;
-    top: 50%;
-    z-index: -2;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    height: 20px;
-    border-radius: 30% 70% 70% 30% / 35% 44% 56% 65%;
-    background-color: rgba(230, 227, 252, 0.74);
-  }
-  .header-full .navbar .nav-item.hire-btn {
-    display: inline-block;
-  }
-  .header-full .navbar .nav-item.hire-btn .nav-link {
-    background-color: #6138bd;
-    color: #fff;
-  }
-  .header-full .navbar .nav-item.hire-btn .nav-link.btn-sm {
-    display: inline-block;
-    padding: 5px 12px !important;
-  }
-  .header-full .logo {
-    padding: 0px;
-  }
-  .header-full .logo img {
-    width: 100%;
-    height: 100%;
-    max-width: 100px;
-    max-height: 50px;
-  }
-  .header-full .navbar-toggler {
-    border: 0px;
-    padding: 0px;
-  }
-  .header-full .navbar-toggler:focus {
-    border: 0px;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-  }
 }
 
 /*==================
@@ -457,6 +719,9 @@ img {
   color: #161c2d;
 }
 
+/*-------------------------------
+   About  Section  CSS
+-------------------------------*/
 .about-full {
   padding: 100px 0px;
 }
@@ -545,6 +810,10 @@ img {
   color: #6f6b80;
   font-weight: 500;
   text-transform: capitalize;
+}
+
+.about-full .about-right .about-content .title {
+  padding: 0px;
 }
 
 .about-full .about-right .about-content .description {
@@ -647,50 +916,6 @@ img {
   background-color: #f5f6fa;
 }
 
-.about-full .skill-full .skill-card .skill-box .skill-destails .progress .progress-bar.progress-primary {
-  background-color: #53c1de;
-}
-
-.about-full .skill-full .skill-card .skill-box .skill-destails .progress .progress-bar.progress-color-one {
-  background-color: #f35045;
-}
-
-.about-full .skill-full .skill-card .skill-box .skill-destails .progress .progress-bar.progress-color-two {
-  background-color: #5bab53;
-}
-
-.about-full .skill-full .skill-card .skill-box .skill-destails .progress .progress-bar.progress-color-three {
-  background-color: #a6120d;
-}
-
-.about-full .skill-full .skill-card .skill-box .skill-destails .progress .progress-bar.progress-color-four {
-  background-color: #6138bd;
-}
-
-.about-full .skill-full .skill-card .skill-box .skill-destails .progress .progress-bar.progress-color-five {
-  background-color: #a4c639;
-}
-
-.about-full .skill-full .skill-card .skill-box .skill-destails .progress .progress-bar.progress-color-six {
-  background-color: #9ace60;
-}
-
-.about-full .skill-full .skill-card .skill-box .skill-destails .progress .progress-bar.progress-color-seven {
-  background-color: #41b883;
-}
-
-.about-full .skill-full .skill-card .skill-box .skill-destails .progress .progress-bar.progress-color-base {
-  background-color: #6138bd;
-}
-
-.about-full .skill-full .skill-card .skill-box .skill-destails .progress .progress-bar.progress-color-eight {
-  background-color: #061e26;
-}
-
-.about-full .skill-full .skill-card .skill-box .skill-destails .progress .progress-bar.progress-color-nine {
-  background-color: #330000;
-}
-
 .about-full .skill-full .skill-card .skill-box .skill-destails h4 {
   margin-top: 15px;
   font-size: 14px;
@@ -735,14 +960,157 @@ img {
   font-size: 14px;
 }
 
-@media only screen and (max-width: 1400px) {
+/*-------------------------------
+   Service  Section  CSS
+-------------------------------*/
+.service-full {
+  padding: 100px 0px 100px 0px;
+  background-color: #f9fbfd;
+}
+
+.service-full .service-image-box {
+  position: relative;
+  padding: 0px 30px;
+}
+
+.service-full .service-image-box img {
+  max-width: 320px;
+  border-radius: 25px;
+  -webkit-transform: rotate(-7deg);
+          transform: rotate(-7deg);
+  z-index: 9;
+  margin-left: auto;
+}
+
+.service-full .service-image-box .image-shape {
+  position: absolute;
+  top: 23px;
+  bottom: -23px;
+  right: 20px;
+  width: 60%;
+  background-color: rgba(96, 56, 189, 0.712);
+  -webkit-transform: rotate(6deg);
+          transform: rotate(6deg);
+  border-radius: 25px;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.service-full .service-image-box .service-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+
+.service-full .left-service .service-item:nth-child(2) {
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+}
+
+.service-full .left-service .service-item {
+  margin-top: 45px;
+}
+
+.service-full .left-service .service-item:first-child {
+  margin-top: 0px;
+}
+
+.service-full .right-service .service-item:nth-child(2) {
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+}
+
+.service-full .right-service .service-item {
+  margin-top: 45px;
+}
+
+.service-full .right-service .service-item:first-child {
+  margin-top: 0px;
+}
+
+.service-full .service-card {
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 25px 25px 25px 25px;
+  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+          box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.service-full .service-card .description {
+  max-width: calc(100% - 85px);
+}
+
+.service-full .service-card .description h3 {
+  font-size: 22px;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+
+.service-full .icon-box {
+  border-radius: 10px;
+  max-width: 60px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 1444px) {
+  .title {
+    padding: 0px 200px;
+  }
+  /*-------------------------------
+      About  Section  CSS
+   -------------------------------*/
   .about-full .skill-full {
     margin-top: 60px;
     padding: 0px 40px;
   }
+  /*-------------------------------
+      Service  Section  CSS
+   -------------------------------*/
+  .service-full .service-image-box img {
+    max-width: 300px;
+    margin: auto;
+  }
+  .service-full .left-service .service-item:nth-child(2) {
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px);
+  }
+  .service-full .right-service .service-item:nth-child(2) {
+    -webkit-transform: translateX(30px);
+            transform: translateX(30px);
+  }
+  .service-full .service-card {
+    padding: 15px;
+  }
+  .service-full .service-card .description h3 {
+    font-size: 18px;
+  }
 }
 
 @media only screen and (max-width: 1199px) {
+  .title {
+    padding: 0px 200px;
+  }
+  .title h2 {
+    font-size: 36px;
+  }
   .banner-full .banner-left .details {
     padding-right: 80px;
   }
@@ -815,6 +1183,9 @@ img {
     color: #161c2d;
     font-size: 14px;
   }
+  /*-------------------------------
+      About  Section  CSS
+   -------------------------------*/
   .about-full .about-left .image-box {
     max-width: 370px;
   }
@@ -838,9 +1209,131 @@ img {
     margin-top: 60px;
     padding: 0px 35px;
   }
+  /*-------------------------------
+      Service  Section  CSS
+   -------------------------------*/
+  .service-full .service-image-box img {
+    max-width: 100%;
+    margin: auto;
+  }
+  .service-full .left-service .service-item:nth-child(2) {
+    -webkit-transform: translateX(-15px);
+            transform: translateX(-15px);
+  }
+  .service-full .right-service .service-item:nth-child(2) {
+    -webkit-transform: translateX(15px);
+            transform: translateX(15px);
+  }
+  .service-full .service-card {
+    padding: 15px;
+  }
+  .service-full .service-card .description h3 {
+    font-size: 18px;
+  }
 }
 
 @media only screen and (max-width: 991px) {
+  .title {
+    padding: 0px 100px;
+  }
+  .title h2 {
+    font-size: 36px;
+  }
+  .header-full {
+    height: 60px;
+    padding: 0px 0px;
+    background-color: #fff;
+  }
+  .header-full .container {
+    max-width: 991px;
+  }
+  .header-full .navbar {
+    padding: 0px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 60px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .header-full .navbar .navbar-collapse {
+    position: absolute;
+    left: 0;
+    top: 60px;
+    background-color: #fff;
+    width: 100%;
+  }
+  .header-full .navbar .nav-item {
+    position: relative;
+    z-index: 9;
+    margin: 0 0px 0 0;
+    text-align: left;
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-bottom: 8px;
+  }
+  .header-full .navbar .nav-item:first-child {
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-top: 25px;
+  }
+  .header-full .navbar .nav-item:last-child {
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+  }
+  .header-full .navbar .nav-item .nav-link {
+    padding: 0px 0px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #161c2d;
+  }
+  .header-full .navbar .nav-item .active {
+    color: #6138bd;
+  }
+  .header-full .navbar .nav-item .active::after {
+    position: absolute;
+    content: '';
+    width: 28px;
+    left: -10px;
+    top: 50%;
+    z-index: -2;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    height: 20px;
+    border-radius: 30% 70% 70% 30% / 35% 44% 56% 65%;
+    background-color: rgba(230, 227, 252, 0.74);
+  }
+  .header-full .navbar .nav-item.hire-btn {
+    display: inline-block;
+  }
+  .header-full .navbar .nav-item.hire-btn .nav-link {
+    background-color: #6138bd;
+    color: #fff;
+  }
+  .header-full .navbar .nav-item.hire-btn .nav-link.btn-sm {
+    display: inline-block;
+    padding: 5px 12px !important;
+  }
+  .header-full .logo {
+    padding: 0px;
+  }
+  .header-full .logo img {
+    width: 100%;
+    height: 100%;
+    max-width: 100px;
+    max-height: 50px;
+  }
+  .header-full .navbar-toggler {
+    border: 0px;
+    padding: 0px;
+  }
+  .header-full .navbar-toggler:focus {
+    border: 0px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
   .banner-full {
     height: 100%;
   }
@@ -931,6 +1424,9 @@ img {
     color: #161c2d;
     font-size: 14px;
   }
+  /*-------------------------------
+      About  Section  CSS
+   -------------------------------*/
   .about-full .about-left .image-box {
     max-width: 500px;
     margin: auto;
@@ -958,9 +1454,53 @@ img {
     margin-top: 60px;
     padding: 0px 0px;
   }
+  /*-------------------------------
+      Service  Section  CSS
+   -------------------------------*/
+  .service-full .mid-service {
+    display: none;
+  }
+  .service-full .left-service {
+    max-width: 50%;
+  }
+  .service-full .left-service .service-item:nth-child(2) {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  .service-full .left-service .service-item {
+    margin-top: 25px;
+  }
+  .service-full .right-service {
+    max-width: 50%;
+  }
+  .service-full .right-service .service-item:nth-child(2) {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  .service-full .right-service .service-item {
+    margin-top: 25px;
+  }
+  .service-full .right-service .service-item:first-child {
+    margin-top: 0px;
+  }
+  .service-full .service-card {
+    padding: 25px;
+  }
+  .service-full .service-card .description h3 {
+    font-size: 18px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
+  .title {
+    padding: 0px 50px;
+  }
+  .title h2 {
+    font-size: 30px;
+  }
+  /*-------------------------------
+      About  Section  CSS
+   -------------------------------*/
   .about-full .about-left .image-box {
     max-width: 400px;
     margin: auto;
@@ -982,11 +1522,27 @@ img {
   }
   .about-full .about-right .about-content .title h2 {
     margin-bottom: 5px;
-    font-size: 24px;
+    font-size: 30px;
   }
   .about-full .skill-full {
     margin-top: 40px;
     padding: 0px 0px;
+  }
+  /*-------------------------------
+      Service  Section  CSS
+   -------------------------------*/
+  .service-full .left-service {
+    max-width: 100%;
+  }
+  .service-full .right-service {
+    margin-top: 25px;
+    max-width: 100%;
+  }
+  .service-full .service-card .description h3 {
+    font-size: 18px;
+  }
+  .service-full .service-card .description p {
+    font-size: 16px;
   }
 }
 
@@ -1060,7 +1616,17 @@ img {
 @media only screen and (max-width: 575px) {
   p {
     font-size: 14px;
+    line-height: 1.6;
   }
+  .title {
+    padding: 0px 30px;
+  }
+  .title h2 {
+    font-size: 24px;
+  }
+  /*-------------------------------
+      About  Section  CSS
+   -------------------------------*/
   .about-full .about-left .image-box {
     max-width: 320px;
     margin: auto;
@@ -1091,10 +1657,17 @@ img {
     font-size: 14px;
   }
   .about-full .about-left .box-success .description p {
-    font-size: 13px;
+    font-size: 14px;
   }
   .about-full .about-right .about-content .title h2 {
-    font-size: 18px;
+    font-size: 24px;
+    margin-bottom: 0px;
+  }
+  .about-full .about-right .about-content .description {
+    margin-top: 15px;
+  }
+  .about-full .about-right .about-content .information {
+    margin-top: 15px;
   }
   .about-full .about-right .about-content .information .personal-detail-title {
     font-size: 14px;
@@ -1107,9 +1680,36 @@ img {
     margin-top: 40px;
     padding: 0px 0px;
   }
+  /*-------------------------------
+      Service  Section  CSS
+   -------------------------------*/
+  .service-full .left-service .service-item {
+    margin-top: 15px;
+  }
+  .service-full .right-service {
+    margin-top: 15px;
+  }
+  .service-full .right-service .service-item {
+    margin-top: 15px;
+  }
+  .service-full .service-card .description h3 {
+    font-size: 16px;
+  }
+  .service-full .service-card .description p {
+    font-size: 14px;
+  }
 }
 
 @media only screen and (max-width: 460px) {
+  .title {
+    padding: 0px;
+  }
+  .title h2 {
+    font-size: 24px;
+  }
+  /*-------------------------------
+      About  Section  CSS
+   -------------------------------*/
   .about-full .about-left .image-box {
     max-width: 240px;
     margin: auto;
@@ -1146,4 +1746,7 @@ img {
     margin-top: 40px;
     padding: 0px 0px;
   }
+  /*-------------------------------
+      Service  Section  CSS
+   -------------------------------*/
 }

@@ -1,0 +1,237 @@
+/*==========play Animation CSS Start==========*/
+.play-now{
+   background: #6138bd;
+   width: 60px;
+   height: 60px;
+   line-height: 60px;
+   position: relative;
+   text-align: center;
+   border: 3px solid #6138bd;
+   z-index: 1;
+   font-size: 28px;
+   padding-left: 5px;
+   display: block;
+   transform-origin: center center;
+   border-radius: 50%;
+   margin: 0 auto;
+   i,svg{
+      color: #fff;
+   }
+   .ripple{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      height: 60px;
+      width: 60px;
+      transform: translateX(-50%) translateY(-50%);
+      transform-origin: center center;
+      border-radius: 50%;
+      box-shadow: 0 0 0 0 rgba(96, 56, 189, 0.712);
+      animation: ripple 3s infinite;
+      background-color: transparent;
+      &:before {
+         position: absolute;
+         content: "";
+         top: 50%;
+         left: 50%;
+         height: 60px;
+         width: 60px;
+         transform: translateX(-50%) translateY(-50%);
+         transform-origin: center center;
+         border-radius: 50%;
+         box-shadow: 0 0 0 0 #fff;
+         animation: ripple 3s infinite;
+         animation-delay: 0.9s;
+      }
+      &:after {
+         position: absolute;
+         content: "";
+         top: 50%;
+         left: 50%;
+         height: 60px;
+         width: 60px;
+         transform: translateX(-50%) translateY(-50%);
+         transform-origin: center center;
+         border-radius: 50%;
+         box-shadow: 0 0 0 0 rgba(96, 56, 189, 0.712);
+         animation: ripple 3s infinite;
+         animation-delay: 0.6s;
+      }
+   }
+}
+@-webkit-keyframes ripple {
+   70% {
+       box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+   }
+   100% {
+       box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+   }
+}
+
+@keyframes ripple {
+   70% {
+       box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+   }
+   100% {
+       box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+   }
+}
+
+
+/*==========play Animation CSS End==========*/
+
+/*==========Bubbles Animation CSS Start==========*/
+.bubbles_wrap {
+   position: fixed;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 990;
+   overflow: hidden;
+   pointer-events: none;
+}
+
+@-webkit-keyframes animateBubble {
+   0% {
+       margin-top: 20%
+   }
+   to {
+       margin-top: -30%
+   }
+}
+
+@-moz-keyframes animateBubble {
+   0% {
+       margin-top: 20%
+   }
+   to {
+       margin-top: -30%
+   }
+}
+
+@keyframes animateBubble {
+   0% {
+       margin-top: 20%
+   }
+   to {
+       margin-top: -30%
+   }
+}
+
+@-webkit-keyframes sideWays {
+   0% {
+       margin-left: 0
+   }
+   to {
+       margin-left: 25px
+   }
+}
+
+@-moz-keyframes sideWays {
+   0% {
+       margin-left: 0
+   }
+   to {
+       margin-left: 25px
+   }
+}
+
+@keyframes sideWays {
+   0% {
+       margin-left: 0
+   }
+   to {
+       margin-left: 25px
+   }
+}
+
+.x1 {
+   -webkit-animation: animateBubble 15s linear infinite, sideWays 2s ease-in-out infinite alternate;
+   animation: animateBubble 15s linear infinite, sideWays 2s ease-in-out infinite alternate;
+   left: 6%;
+   top: 45%;
+   background: #6138bd;
+}
+
+.x2 {
+   -webkit-animation: animateBubble 10s linear infinite, sideWays 4s ease-in-out infinite alternate;
+   animation: animateBubble 10s linear infinite, sideWays 4s ease-in-out infinite alternate;
+   left: 5%;
+   top: 80%;
+   background: #a756f9;
+}
+
+.x3 {
+   -webkit-animation: animateBubble 18s linear infinite, sideWays 2s ease-in-out infinite alternate;
+   animation: animateBubble 18s linear infinite, sideWays 2s ease-in-out infinite alternate;
+   left: 10%;
+   top: 40%;
+   background: #6138bd;
+}
+
+.x4 {
+   -webkit-animation: animateBubble 12s linear infinite, sideWays 3s ease-in-out infinite alternate;
+   animation: animateBubble 12s linear infinite, sideWays 3s ease-in-out infinite alternate;
+   left: 20%;
+   top: 0;
+   background: #a756f9;
+}
+
+.x5 {
+   -webkit-animation: animateBubble 19s linear infinite, sideWays 4s ease-in-out infinite alternate;
+   animation: animateBubble 19s linear infinite, sideWays 4s ease-in-out infinite alternate;
+   left: 30%;
+   top: 50%;
+   background: #6138bd;
+}
+
+.x6 {
+   -webkit-animation: animateBubble 11s linear infinite, sideWays 2s ease-in-out infinite alternate;
+   animation: animateBubble 11s linear infinite, sideWays 2s ease-in-out infinite alternate;
+   left: 50%;
+   top: 0;
+   background: #a756f9;
+}
+
+.x7 {
+   -webkit-animation: animateBubble 10s linear infinite, sideWays 2s ease-in-out infinite alternate;
+   animation: animateBubble 10s linear infinite, sideWays 2s ease-in-out infinite alternate;
+   left: 65%;
+   top: 70%;
+   background: #6138bd;
+}
+
+.x8 {
+   -webkit-animation: animateBubble 12s linear infinite, sideWays 3s ease-in-out infinite alternate;
+   animation: animateBubble 12s linear infinite, sideWays 3s ease-in-out infinite alternate;
+   left: 80%;
+   top: 10%;
+   background: #a756f9;
+}
+
+.x9 {
+   -webkit-animation: animateBubble 19s linear infinite, sideWays 4s ease-in-out infinite alternate;
+   animation: animateBubble 19s linear infinite, sideWays 4s ease-in-out infinite alternate;
+   left: 90%;
+   top: 50%;
+   background: #7859fc;
+}
+
+.x10 {
+   -webkit-animation: animateBubble 16s linear infinite, sideWays 2s ease-in-out infinite alternate;
+   animation: animateBubble 16s linear infinite, sideWays 2s ease-in-out infinite alternate;
+   left: 80%;
+   top: 80%;
+   background: #a756f9;
+}
+
+.bubble {
+   position: absolute;
+   border-radius: 50%;
+   box-shadow: none;
+   width: 5px;
+   height: 5px;
+}
+
+/*==========Bubbles Animation CSS End==========*/

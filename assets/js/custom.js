@@ -46,6 +46,11 @@ $(function() {
                   768 : {
                      items:2,
                      margin: 20,
+                     nav: false,
+                  },
+                  991 : {
+                     items:2,
+                     margin: 20,
                   },
                   1200 : {
                      items:3,
