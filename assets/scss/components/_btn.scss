@@ -27,3 +27,32 @@
       background-color: #6138bd;
    }
 }
+.base-btn{
+   background-color: #f5ecfd;
+   position: relative;
+   overflow: hidden;
+   z-index: 9;
+   transition: all .3s ease;
+   span{
+      color: #6138bd;
+   }
+   &:before {
+      position: absolute;
+      content: "";
+      z-index: -1;
+      background-color: #6138bd;
+      left: -5px;
+      right: -5px;
+      bottom: -5px;
+      height: 0;
+      transition: all .3s ease;
+   }
+   &:hover{
+      span{
+         color: #fff;
+      }
+      &:before{
+         height: 115%;
+      }
+   }
+}

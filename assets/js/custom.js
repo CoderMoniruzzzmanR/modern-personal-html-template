@@ -1,8 +1,5 @@
 $(function() {
-    
    "use strict";
-   
-  
   // stciky menu
   var nav=$(".header-full");
   $(window).scroll(function(){
@@ -14,12 +11,10 @@ $(function() {
           nav.removeClass("nav_fixd");
       }  
   });
-
   $(document).ready(function(){
       function startCarousel(){
          $(".skill-slider").owlCarousel({
                loop:false,
-               // margin: 15,
                responsiveClass:true,
                items: 5,
                nav: true,
@@ -62,9 +57,44 @@ $(function() {
                   },
                }
          });
+         $(".clients-slider").owlCarousel({
+            loop:false,
+            responsiveClass:true,
+            items: 1,
+            nav: true,
+            autoplay:true,
+            autoplayTimeout:2000,
+            margin: 0,
+            loop: true,
+            navText : ["<i class='fa-solid fa-arrow-left-long'></i>","<i class='fa-solid fa-arrow-right-long'></i>"],
+            responsive : {
+               0 : {
+                  items:1,
+                  nav: false,
+               },
+               360 : {
+                  items:1,
+                  nav: false,
+               },
+               480 : {
+                  items:1,
+                  nav: false,
+               },
+               768 : {
+                  items:1,
+               },
+               991 : {
+                  items:1,
+               },
+               1200 : {
+                  items:1,
+               },
+               1400 : {
+                  items:1,
+               },
+            }
+         });
       }
       startCarousel();
    });
-
-      
 });
