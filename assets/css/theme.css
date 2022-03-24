@@ -1091,7 +1091,7 @@ img {
 }
 
 .about-full .about-left .image-box {
-  max-width: 500px;
+  max-width: 400px;
   margin-left: auto;
   border-radius: 15px;
 }
@@ -1129,7 +1129,7 @@ img {
 .about-full .about-left .box-success {
   position: absolute;
   bottom: -25px;
-  right: 160px;
+  right: 115px;
   background-color: #fff;
   border-radius: 15px;
   padding: 15px 25px;
@@ -1917,6 +1917,76 @@ img {
 
 .blog-card:hover .blog-content .blog-link h3 {
   color: #6138bd;
+}
+
+.contact-full {
+  padding: 100px 0px 100px 0px;
+  background: #f9fbfd;
+  background-position: center;
+  background-size: cover;
+}
+
+.contact-full .contact-left .title {
+  padding: 0px 0px;
+}
+
+.footer-full {
+  padding: 100px 0px 30px 0px;
+  background: #161c2d;
+  background-position: center;
+  background-size: cover;
+}
+
+.footer-full .logo-box {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.footer-full .lets-talk {
+  text-align: center;
+}
+
+.footer-full .lets-talk h4 {
+  text-align: center;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.footer-full .lets-talk .social {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.footer-full .lets-talk .social a {
+  display: inline-block;
+  background: #6138bd;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 15px;
+  line-height: 40px;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.footer-full .lets-talk .social a:first-child {
+  margin-left: 0px;
+}
+
+.footer-full .lets-talk .social a span i, .footer-full .lets-talk .social a span svg {
+  color: #fff;
+}
+
+.footer-full p {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.footer-full .copy-wrap {
+  text-align: center;
+  border-top: 1px dashed #6f6b80;
+  padding-top: 30px;
 }
 
 @media only screen and (max-width: 1444px) {
